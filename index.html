@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <div class title="Weather App" class="weather-app">
+    <h1 class="brand">Weather Website</h1>
+  <div class="container">
+    <div class="main-info">
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Enter location..." />
+      </div>
+      <div id="weather">
+        <div class="temperature" id="temp">--°</div>
+        <div class="description" id="desc">--</div>
+        <div class="summary" id="summary">Loading...</div>
+        <div class="info-boxes">
+          <div class="info-box">Feels Like<br><strong id="feels">--°</strong></div>
+          <div class="info-box">Precipitation<br><strong id="precip">--</strong></div>
+          <div class="info-box">Visibility<br><strong id="vis">--</strong></div>
+          <div class="info-box">Humidity<br><strong id="humidity">--</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="forecast-box">
+        <div><strong>Hourly Forecast</strong></div>
+        <div class="forecast-hourly" id="hourly"></div>
+      </div>
+      <div class="forecast-box">
+        <div><strong>10-Day Forecast</strong></div>
+        <div class="forecast-daily" id="daily"></div>
+      </div>
+      <div class="uv-wind-box">
+        <div class="uv-index">
+          <div>UV Index<br><strong id="uv">--</strong></div>
+          <div class="uv-bar">
+            <div class="uv-pointer"></div>
+          </div>
+          <small>Use sun protection until 16:00</small>
+        </div>
+        <div class="wind">
+          <div>Wind<br><strong id="wind">--</strong><br><strong id="gusts">--</strong> Gusts</div>
+        </div>
+      </div>
+      <div class="aqi-box">
+        <div class="aqi-index">
+          <div>Air Quality Index<br><strong id="aqi">--</strong></div>
+          <small id="aqi-level">--</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
